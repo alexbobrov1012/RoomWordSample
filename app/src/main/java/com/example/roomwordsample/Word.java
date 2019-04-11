@@ -7,7 +7,6 @@ import android.support.annotation.NonNull;
 
 @Entity (tableName = "word_table")
 public class Word {
-
     @PrimaryKey (autoGenerate = true)
     @NonNull
     private int id;
@@ -20,6 +19,9 @@ public class Word {
 
     public int getId() {
         return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 }
 
